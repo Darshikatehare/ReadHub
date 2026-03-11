@@ -1,0 +1,159 @@
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.list-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.list-subtitle {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.table-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  border: 1px solid #f1f5f9;
+  overflow: hidden;
+}
+
+.table-toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  gap: 1rem;
+}
+
+.toolbar-search {
+  position: relative;
+  flex: 1;
+}
+
+.toolbar-input {
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  outline: none;
+  font-size: 0.875rem;
+}
+
+.toolbar-input:focus {
+  border-color: #0284c7;
+  outline: none;
+  box-shadow: 0 0 0 2px #38bdf8;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #475569;
+  background-color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.data-table thead {
+  background-color: #f8fafc;
+  color: #64748b;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.data-table th {
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+}
+
+.data-table tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s;
+}
+
+.data-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.data-table td {
+  padding: 1rem 1.5rem;
+}
+
+.book-info .title {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.book-info .author {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-primary { background-color: #e0f2fe; color: #0369a1; }
+
+.avail-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+.dot-online { background-color: #10b981; }
+.dot-offline { background-color: #ef4444; }
+
+.actions-cell {
+  text-align: right;
+}
+
+.action-btn {
+  padding: 0.5rem;
+  color: #94a3b8;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.action-edit:hover { color: #0284c7; }
+.action-delete:hover { color: #ef4444; }
+
+.empty-state {
+  padding: 5rem 0;
+  text-align: center;
+  color: #94a3b8;
+}

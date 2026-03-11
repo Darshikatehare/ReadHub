@@ -1,0 +1,130 @@
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.dashboard-subtitle {
+  color: #64748b;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.stat-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.stat-icon-wrapper {
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.blue-icon { background-color: #eff6ff; color: #3b82f6; }
+.emerald-icon { background-color: #ecfdf5; color: #10b981; }
+.amber-icon { background-color: #fffbeb; color: #f59e0b; }
+.purple-icon { background-color: #faf5ff; color: #a855f7; }
+
+.stat-info h3 {
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.stat-info p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.dashboard-sections {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .dashboard-sections {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.section-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  border: 1px solid #f1f5f9;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.placeholder-box {
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #f1f5f9;
+  border-radius: 0.75rem;
+  color: #94a3b8;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #475569;
+  font-size: 0.875rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+.dot-blue { background-color: #3b82f6; }
+.dot-emerald { background-color: #10b981; }
